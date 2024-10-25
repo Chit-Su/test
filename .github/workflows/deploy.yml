@@ -18,7 +18,7 @@ jobs:
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.test-secret }}
+          ssh-private-key: ${{ secrets.SECRET_KEY }}
 
       # Step 3: Add your server's IP address to known_hosts to prevent SSH from asking for confirmation
       - name: Add server to known_hosts
